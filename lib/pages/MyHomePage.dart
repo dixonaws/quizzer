@@ -1,5 +1,23 @@
 import 'package:flutter/material.dart';
 
+final List<Widget> pages = [
+  const MyHomePage(title: 'page 1'),
+  const PageTwo(),
+];
+
+class PageTwo extends StatelessWidget {
+  const PageTwo({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      body: Container(
+        child: Text('PageTwo'),
+      ),
+    );
+  }
+}
+
 class MyHomePage extends StatefulWidget {
   const MyHomePage({super.key, required this.title});
 
@@ -12,7 +30,7 @@ class MyHomePage extends StatefulWidget {
 class _MyHomePageState extends State<MyHomePage> {
   int _counter = 0;
 
-  void reset() {
+  void resetCounter() {
     setState(() {
       _counter = 0;
     });
@@ -48,11 +66,10 @@ class _MyHomePageState extends State<MyHomePage> {
             },
           ),
         ),
-
         backgroundColor: Theme.of(context).colorScheme.inversePrimary,
         // Here we take the value from the MyHomePage object that was created by
         // the App.build method, and use it to set our appbar title.
-        title: Text(widget.title),
+        title: Text("Quizzer"),
         actions: <Widget>[
           Padding(
             padding: const EdgeInsets.all(8.0),
@@ -62,25 +79,44 @@ class _MyHomePageState extends State<MyHomePage> {
                 color: Colors.white,
               ),
               onPressed: () {
-                print("Open accocunt dialog");
+                print("Open account dialog");
               },
             ),
           )
         ],
       ),
-      body: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: <Widget>[
-            const Text(
-              'You have pushed the button this many times:',
+      body: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        mainAxisSize: MainAxisSize.min,
+        // mainAxisAlignment: MainAxisAlignment.center,
+        children: <Widget>[
+          Container(
+            decoration: BoxDecoration(
+              color: Colors.grey[200],
+              border: Border(
+                bottom: BorderSide(width: 1, color: Colors.black26),
+              ),
             ),
-            Text(
+            height: 74,
+            width: double.infinity,
+            padding: EdgeInsets.all(16),
+            child: const Text('First child of column'),
+          ),
+          Center(
+            child: Padding(
+              padding: const EdgeInsets.all(100),
+              child: const Text(
+                'You have pushed the button this many times:',
+              ),
+            ),
+          ),
+          Center(
+            child: Text(
               '$_counter',
               style: Theme.of(context).textTheme.headlineMedium,
             ),
-          ],
-        ),
+          ),
+        ],
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: _incrementCounter,
@@ -88,20 +124,23 @@ class _MyHomePageState extends State<MyHomePage> {
         child: const Icon(Icons.add),
       ),
       bottomNavigationBar: BottomNavigationBar(
+        backgroundColor: Colors.grey[200],
         items: const <BottomNavigationBarItem>[
-          BottomNavigationBarItem(icon: Icon(Icons.reset_tv), label: "Reset"),
           BottomNavigationBarItem(icon: Icon(Icons.home), label: "Home"),
+          BottomNavigationBarItem(icon: Icon(Icons.quiz), label: "Quiz Spaces"),
+          BottomNavigationBarItem(
+              icon: Icon(Icons.icecream_rounded), label: "Daily Top 3"),
         ],
-
         onTap: (index) {
           setState(() {
             // reset button pressed
             if (index == 0) {
-              reset();
+              resetCounter();
+            } else if (index == 1) {
+              print("Go to home page");
             }
           });
         },
-        // body:yourWidgetList[activeIndex]
       ),
     );
   }
