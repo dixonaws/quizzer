@@ -5,6 +5,12 @@ void main() {
   runApp(const MyApp());
 }
 
+//todo: add loading page/splash screen
+//todo: test loading different pages and navigation (mitch koko video)
+//todo: test showing a dailog box
+//todo: drawers for profile and settings
+
+
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 

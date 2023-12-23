@@ -62,6 +62,12 @@
       "languageVersion": "3.2"
     },
     {
+      "name": "flutter_web_plugins",
+      "rootUri": "file:///Users/jpdixon/Devtools/flutter/packages/flutter_web_plugins",
+      "packageUri": "lib/",
+      "languageVersion": "3.2"
+    },
+    {
       "name": "lints",
       "rootUri": "file:///Users/jpdixon/.pub-cache/hosted/pub.dev/lints-2.1.1",
       "packageUri": "lib/",
@@ -134,6 +140,12 @@
       "languageVersion": "3.0"
     },
     {
+      "name": "toast",
+      "rootUri": "file:///Users/jpdixon/.pub-cache/hosted/pub.dev/toast-0.3.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
       "name": "vector_math",
       "rootUri": "file:///Users/jpdixon/.pub-cache/hosted/pub.dev/vector_math-2.1.4",
       "packageUri": "lib/",
@@ -152,7 +164,7 @@
       "languageVersion": "3.2"
     }
   ],
-  "generated": "2023-12-23T16:42:56.552382Z",
+  "generated": "2023-12-23T19:06:19.722815Z",
   "generator": "pub",
   "generatorVersion": "3.2.3"
 }

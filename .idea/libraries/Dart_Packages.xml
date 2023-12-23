@@ -72,6 +72,13 @@
             </list>
           </value>
         </entry>
+        <entry key="flutter_web_plugins">
+          <value>
+            <list>
+              <option value="$USER_HOME$/Devtools/flutter/packages/flutter_web_plugins/lib" />
+            </list>
+          </value>
+        </entry>
         <entry key="lints">
           <value>
             <list>
@@ -156,6 +163,13 @@
             </list>
           </value>
         </entry>
+        <entry key="toast">
+          <value>
+            <list>
+              <option value="$USER_HOME$/.pub-cache/hosted/pub.dev/toast-0.3.0/lib" />
+            </list>
+          </value>
+        </entry>
         <entry key="vector_math">
           <value>
             <list>
@@ -192,11 +206,13 @@
       <root url="file://$USER_HOME$/.pub-cache/hosted/pub.dev/string_scanner-1.2.0/lib" />
       <root url="file://$USER_HOME$/.pub-cache/hosted/pub.dev/term_glyph-1.2.1/lib" />
       <root url="file://$USER_HOME$/.pub-cache/hosted/pub.dev/test_api-0.6.1/lib" />
+      <root url="file://$USER_HOME$/.pub-cache/hosted/pub.dev/toast-0.3.0/lib" />
       <root url="file://$USER_HOME$/.pub-cache/hosted/pub.dev/vector_math-2.1.4/lib" />
       <root url="file://$USER_HOME$/.pub-cache/hosted/pub.dev/web-0.3.0/lib" />
       <root url="file://$USER_HOME$/Devtools/flutter/bin/cache/pkg/sky_engine/lib" />
       <root url="file://$USER_HOME$/Devtools/flutter/packages/flutter/lib" />
       <root url="file://$USER_HOME$/Devtools/flutter/packages/flutter_test/lib" />
+      <root url="file://$USER_HOME$/Devtools/flutter/packages/flutter_web_plugins/lib" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />

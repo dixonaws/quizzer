@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:toast/toast.dart';
 
 final List<Widget> pages = [
   const MyHomePage(title: 'page 1'),
@@ -47,6 +48,10 @@ class _MyHomePageState extends State<MyHomePage> {
     });
   }
 
+  void showToast(String msg, {int? duration, int? gravity}) {
+    Toast.show(msg, duration: duration, gravity: gravity);
+  }
+
   @override
   Widget build(BuildContext context) {
     // This method is rerun every time setState is called, for instance as done
@@ -55,6 +60,8 @@ class _MyHomePageState extends State<MyHomePage> {
     // The Flutter framework has been optimized to make rerunning build methods
     // fast, so that you can just rebuild anything that needs updating rather
     // than having to individually change instances of widgets.
+    ToastContext().init(context);
+
     return Scaffold(
       appBar: AppBar(
         leading: Padding(
@@ -136,8 +143,10 @@ class _MyHomePageState extends State<MyHomePage> {
             // reset button pressed
             if (index == 0) {
               resetCounter();
+              showToast("Counter has been reset", gravity: Toast.top, duration: Toast.lengthShort);
+
             } else if (index == 1) {
-              print("Go to home page");
+              print("Quiz Spaces page");
             }
           });
         },

@@ -74,6 +74,10 @@ test_api
 3.0
 file:///Users/jpdixon/.pub-cache/hosted/pub.dev/test_api-0.6.1/
 file:///Users/jpdixon/.pub-cache/hosted/pub.dev/test_api-0.6.1/lib/
+toast
+2.12
+file:///Users/jpdixon/.pub-cache/hosted/pub.dev/toast-0.3.0/
+file:///Users/jpdixon/.pub-cache/hosted/pub.dev/toast-0.3.0/lib/
 vector_math
 2.14
 file:///Users/jpdixon/.pub-cache/hosted/pub.dev/vector_math-2.1.4/
@@ -94,6 +98,10 @@ flutter_test
 3.2
 file:///Users/jpdixon/Devtools/flutter/packages/flutter_test/
 file:///Users/jpdixon/Devtools/flutter/packages/flutter_test/lib/
+flutter_web_plugins
+3.2
+file:///Users/jpdixon/Devtools/flutter/packages/flutter_web_plugins/
+file:///Users/jpdixon/Devtools/flutter/packages/flutter_web_plugins/lib/
 flutterplayground
 3.2
 file:///Users/jpdixon/Dropbox/ReplPersonal/Developer/quizzer/
