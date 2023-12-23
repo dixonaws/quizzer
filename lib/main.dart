@@ -5,9 +5,9 @@ void main() {
   runApp(const MyApp());
 }
 
-//todo: add loading page/splash screen
+//todo: add loading page/splash screen: https://www.youtube.com/watch?v=baa0SlEDimk
 //todo: test loading different pages and navigation (mitch koko video)
-//todo: test showing a dailog box
+//todo: test showing a dialog box
 //todo: drawers for profile and settings
 
 
