@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:toast/toast.dart';
 
+import 'my_second_page.dart';
+
 final List<Widget> pages = [
   const MyHomePage(title: 'page 1'),
   const PageTwo(),
@@ -30,6 +32,13 @@ class MyHomePage extends StatefulWidget {
 
 class _MyHomePageState extends State<MyHomePage> {
   int _counter = 0;
+
+  void setPage() {
+    setState(() {
+      // replace the main page
+      
+    });
+  }
 
   void resetCounter() {
     setState(() {
@@ -133,7 +142,8 @@ class _MyHomePageState extends State<MyHomePage> {
       bottomNavigationBar: BottomNavigationBar(
         backgroundColor: Colors.grey[200],
         items: const <BottomNavigationBarItem>[
-          BottomNavigationBarItem(icon: Icon(Icons.home), label: "Home"),
+          BottomNavigationBarItem(
+              icon: Icon(Icons.undo), label: "Reset Counter"),
           BottomNavigationBarItem(icon: Icon(Icons.quiz), label: "Quiz Spaces"),
           BottomNavigationBarItem(
               icon: Icon(Icons.icecream_rounded), label: "Daily Top 3"),
@@ -142,11 +152,17 @@ class _MyHomePageState extends State<MyHomePage> {
           setState(() {
             // reset button pressed
             if (index == 0) {
+              print("Reset button pressed");
               resetCounter();
-              showToast("Counter has been reset", gravity: Toast.top, duration: Toast.lengthShort);
-
             } else if (index == 1) {
               print("Quiz Spaces page");
+              Navigator.push(context, MaterialPageRoute(
+                builder: (context) {
+                  return MySecondPage();
+                },
+              ));
+            } else if (index == 2) {
+              print("Daily Top 3 page");
             }
           });
         },

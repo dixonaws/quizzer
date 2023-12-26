@@ -9,6 +9,7 @@ void main() {
 //todo: test loading different pages and navigation (mitch koko video)
 //todo: test showing a dialog box
 //todo: drawers for profile and settings
+//todo: toast settings are inconsistent across device types
 
 
 class MyApp extends StatelessWidget {
